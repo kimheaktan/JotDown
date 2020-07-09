@@ -1,0 +1,190 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html, header, form {
+  font-size: 24px !important;
+  font-family: "Raleway", sans-serif;
+}
+/* @media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+} */
+@media only screen and (max-width: 480px){
+  .folder,.note{
+    font-size: 13px !important;
+  }
+  .smallScreen {
+    min-width: 100% !important;
+  }
+  .sm{
+    min-width: 100%;
+  }
+}
+@media only screen and (min-width: 481px){
+  .md{
+    min-width: 50%;
+  }
+  .folderList{
+    max-width: 30% !important;
+  }
+}
+@media only screen and (min-width: 1024px){
+  .folderList{
+    max-width: 30% !important;
+  }
+  .lg{
+    min-width: 33.33%;
+  }
+  
+}
+.smallCan{
+  font-size: .25em !important;
+}
+
+.notes{
+  column-gap: 5px !important;
+  column-count: 3;
+  margin: 10px auto;
+}
+.noteCard{
+  background-color: rgb(93,144,144);
+  color: white;
+  margin: 8px;
+  min-height: 5em;
+  padding-top: .5em;
+  border: none;
+  font-size: 18px;
+}
+.noteCard:hover{
+  background-color: rgb(116, 175, 175);
+}
+
+
+.noteList{
+  background-color: rgb(231,231,231);
+  /* display: inline-block !important; */
+  border-radius: 4px;
+  /* min-height: 100% !important; */
+}
+a{
+  text-decoration: none !important;
+}
+
+.each{
+  background-color: rgb(238,202,189);
+  margin-bottom: 5px;
+  text-align: center;
+  border-radius: 4px;
+  color: rgb(163, 154, 154);
+  padding: 10px;
+  font-size: 18px;
+  
+}
+.selected{
+
+  background-color: rgb(245, 144, 107);
+  color: white
+}
+.each:hover{
+  background-color: rgb(245, 144, 107);
+  color: white
+}
+
+.btn{
+  background-color: rgb(216, 211, 211);
+  color: black;
+  text-decoration: none;
+  font-size: 1em;
+}
+.btn:hover{
+  background-color: rgb(156, 148, 148);
+  color: #e5e5e5;
+}
+
+.plus{
+  /* padding-top: -5px; */
+  font-size: 2em !important;
+  padding: 0 auto !important;
+}
+.rm{
+  font-size: 1.2em !important;
+  /* vertical-align: 5em !important; */
+  writing-mode: sideways-lr !important;
+  color: rgb(247, 244, 244);
+  float: right !important;
+  position: relative !important ;
+  padding-bottom: .5em;
+}
+.rm:hover{
+  color: red !important;
+}
+.date{
+  color: rgb(211, 209, 209);
+}
+.new{
+  padding-top: 50px;
+
+}
+
+.note,.folder{
+  /* max-width: 50px; */
+  font-weight: bold;
+  /* padding: 0 !important; */
+}
+.jot{
+  font-size: 4em !important;
+  color: rgb(110,151,151) !important;
+  text-decoration: none !important;
+}
+.jot:hover{
+  color: rgb(5, 97, 66) !important;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}

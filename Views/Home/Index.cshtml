@@ -1,0 +1,46 @@
+﻿@model allFoldersModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container">
+
+<div class="row">
+    <div class="folderList smallScreen col">
+        @foreach (var f in Model.allFolders)
+        {
+            <a asp-action="ViewFolder" asp-controller="Home" asp-route-folderID="@f.FolderId" class="d-flex justify-content-between each" style="text-decoration:none">
+                <div>
+                    @f.FolderName
+                </div>
+                <div style="font-size: 15px ">
+                    @f.Notes.Count 
+                </div>
+            </a>
+        }
+    </div>
+
+    <div class="noteList smallScreen col">
+        <div class="row notes">
+
+            @foreach (var n in Model.allNotes)
+            {
+                <div  class="col sm md lg noteCard">
+                    <a asp-action="ViewNote" asp-controller="home" style="color: white" >
+                    @n.NoteName 
+                    <div>Folder: @n.Folder.FolderName</div>
+                    <div class="date">
+                        Last modified: @n.UpdatedAt
+                    </div>
+                    </a>
+                    <a href="" class="rm" onclick="clicked()"><span class="glyphicon rm">&#xe020;</span></a> 
+                </div>
+                   
+            }
+        </div>
+
+    </div>
+</div>
+
+</div>
+

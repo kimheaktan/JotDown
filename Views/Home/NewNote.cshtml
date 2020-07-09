@@ -1,0 +1,47 @@
+@model allFoldersModel
+
+<div class="container">
+    <div class="row">
+    <div class="folderList smallScreen col">
+        @foreach (var f in Model.allFolders)
+        {
+            <a asp-action="ViewFolder" asp-controller="Home" asp-route-folderID="@f.FolderId" class="d-flex justify-content-between each" style="text-decoration:none">
+
+                <div>
+                    @f.FolderName
+                </div>
+                <div style="font-size: 15px ">
+                    @f.Notes.Count 
+                </div>
+            </a>
+        }
+    </div>
+
+    <div class="noteList smallScreen col">
+        <div class="">
+
+            <form asp-action="CreateNote" asp-controller="Home" method="post" class="form-group">
+                <label asp-for="note.NoteName"><h2>Add a Note</h2></label>
+                
+                <span asp-validation-for="note.NoteName" class="text-danger"></span><br>
+                <input type="text" asp-for="note.NoteName" class="form-control" placeholder="New note">
+
+                <span asp-validation-for="note.Details" class="text-danger"></span><br>
+                <textarea asp-for="note.Details" rows="5" placeholder="Note details" class="form-control" ></textarea>
+
+
+                <label style="font-size: 15px" >Select a folder:</label>
+                <select class="form-control" asp-for="note.FolderId">
+                    @foreach (var f in Model.allFolders)
+                    {
+                        <option value="@f.FolderId" >@f.FolderName</option>
+                    }
+                </select><br>
+                <input type="submit" class="btn btn-info " style="font-size:15px" value="Add!">
+            </form>
+        </div>
+    </div>
+    </div>
+
+</div>
+

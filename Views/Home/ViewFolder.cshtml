@@ -1,0 +1,58 @@
+@model allFoldersModel
+<div class="container">
+
+<div class="row">
+    <div class="folderList smallScreen col">
+        @foreach (var f in Model.allFolders)
+        {
+            @if(f.FolderId == HttpContextAccessor.HttpContext.Session.GetInt32("folderId"))
+            {
+
+                <a asp-action="ViewFolder" asp-controller="Home" asp-route-folderID="@f.FolderId" class="d-flex justify-content-between each selected" style="text-decoration:none">
+                    <div>
+                        @f.FolderName
+                    </div>
+                    <div style="font-size: 15px ">
+                        @f.Notes.Count 
+                    </div>
+                    
+                </a>
+            }
+            else{
+
+                <a asp-action="ViewFolder" asp-controller="Home" asp-route-folderID="@f.FolderId" class="d-flex justify-content-between each" style="text-decoration:none">
+                    <div>
+                        @f.FolderName
+                    </div>
+                    <div style="font-size: 15px ">
+                        @f.Notes.Count 
+                    </div>
+                </a>
+            }
+        }
+    </div>
+
+    <div class="noteList smallScreen col">
+        <div class="row notes">
+
+            @foreach (var n in Model.folder.Notes)
+            {
+                <span class="col sm md lg noteCard" >
+                    <a asp-action="ViewNote" asp-controller="home" style="color: white" >
+
+                    @n.NoteName 
+                    <div class="date">
+                        Last modified: @n.CreatedAt
+                    </div>
+                    <a asp-action="DeleteNote" asp-controller="home" asp-route-noteID="@n.NoteId"  
+                    asp-route-folderID="@n.Folder.FolderId"class="rm"><span class="glyphicon rm">&#xe020;</span></a> 
+                    </a>
+                </span>
+                   
+            }
+        </div>
+
+    </div>
+</div>
+
+</div>

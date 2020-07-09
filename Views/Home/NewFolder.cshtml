@@ -1,0 +1,34 @@
+@model allFoldersModel
+
+<div class="container">
+    <div class="row">
+    <div class="folderList smallScreen col">
+        @foreach (var f in Model.allFolders)
+        {
+            <a asp-action="ViewFolder" asp-controller="Home" asp-route-folderID="@f.FolderId" class="d-flex justify-content-between each" style="text-decoration:none">
+
+                <div>
+                    @f.FolderName
+                </div>
+                <div style="font-size: 15px ">
+                    @f.Notes.Count 
+                </div>
+            </a>
+        }
+    </div>
+
+    <div class="noteList smallScreen col">
+        <div class="">
+
+            <form asp-action="CreateFolder" class="group-form" asp-controller="Home" method="post">
+                <label asp-for="folder.FolderName"><h2>Add a Folder</h2></label><br>
+                <span asp-validation-for="folder.FolderName" class="text-danger"></span><br>
+                <input class="form-control" type="text" asp-for="folder.FolderName" placeholder="New folder"><br>
+                <input type="submit" class="btn btn-info" style="font-size: 16px"  value="Add!">
+            </form>
+        </div>
+    </div>
+    </div>
+
+</div>
+
