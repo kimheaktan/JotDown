@@ -26,14 +26,15 @@
             @foreach (var n in Model.allNotes)
             {
                 <div  class="col sm md lg noteCard">
-                    <a asp-action="ViewNote" asp-controller="home" style="color: white" >
+                    <a asp-action="ViewNote" asp-route-noteID="@n.NoteId" asp-controller="home" style="color: white" >
                     @n.NoteName 
                     <div>Folder: @n.Folder.FolderName</div>
                     <div class="date">
                         Last modified: @n.UpdatedAt
                     </div>
                     </a>
-                    <a href="" class="rm" onclick="clicked()"><span class="glyphicon rm">&#xe020;</span></a> 
+                    <a asp-action="DeleteNote" asp-controller="home" asp-route-noteID="@n.NoteId"  
+                    asp-route-folderID="@n.Folder.FolderId"class="rm"onclick="clicked()"><span class="glyphicon rm">&#xe020;</span></a> 
                 </div>
                    
             }

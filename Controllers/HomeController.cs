@@ -99,9 +99,16 @@ namespace Jot.Controllers
             return View(info);
         }
 
-        public IActionResult ViewNote()
+        public IActionResult ViewNote(int noteID)
         {
-            return View();
+            Note thisNote = _db.Notes.Include(n => n.Folder).FirstOrDefault(n => n.NoteId == noteID);
+
+            List<Folder> folders = _db.Folders.Include(f => f.Notes).OrderBy(f => f.FolderName).ToList();
+            allFoldersModel info = new allFoldersModel{
+                allFolders = folders,
+                note = thisNote
+            };
+            return View(info);
         }
 
         public IActionResult DeleteNote(int noteID, int folderID)

@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/user/coding dojo/job/Jot/Jot.csproj",
+  "FilePath": "/Users/user/coding dojo/job/projects/Jot/Jot.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,63 +2961,63 @@
   "RootNamespace": "Jot",
   "Documents": [
     {
-      "FilePath": "/Users/user/coding dojo/job/Jot/Views/Home/NewFolder.cshtml",
-      "TargetPath": "Views\\Home\\NewFolder.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/user/coding dojo/job/Jot/Views/Shared/_CookieConsentPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/user/coding dojo/job/Jot/Views/_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/user/coding dojo/job/Jot/Views/_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/user/coding dojo/job/Jot/Views/Shared/Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/user/coding dojo/job/Jot/Views/Home/NewNote.cshtml",
+      "FilePath": "/Users/user/coding dojo/job/projects/Jot/Views/Home/NewNote.cshtml",
       "TargetPath": "Views\\Home\\NewNote.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/user/coding dojo/job/Jot/Views/Home/ViewFolder.cshtml",
-      "TargetPath": "Views\\Home\\ViewFolder.cshtml",
+      "FilePath": "/Users/user/coding dojo/job/projects/Jot/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/user/coding dojo/job/Jot/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/user/coding dojo/job/Jot/Views/Home/ViewNote.cshtml",
-      "TargetPath": "Views\\Home\\ViewNote.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/user/coding dojo/job/Jot/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/user/coding dojo/job/Jot/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "FilePath": "/Users/user/coding dojo/job/projects/Jot/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/user/coding dojo/job/Jot/Views/Home/Index.cshtml",
+      "FilePath": "/Users/user/coding dojo/job/projects/Jot/Views/Home/ViewNote.cshtml",
+      "TargetPath": "Views\\Home\\ViewNote.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/user/coding dojo/job/projects/Jot/Views/Home/Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/user/coding dojo/job/projects/Jot/Views/Shared/_CookieConsentPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/user/coding dojo/job/projects/Jot/Views/Home/NewFolder.cshtml",
+      "TargetPath": "Views\\Home\\NewFolder.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/user/coding dojo/job/projects/Jot/Views/Shared/Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/user/coding dojo/job/projects/Jot/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/user/coding dojo/job/projects/Jot/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/user/coding dojo/job/projects/Jot/Views/Home/ViewFolder.cshtml",
+      "TargetPath": "Views\\Home\\ViewFolder.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/user/coding dojo/job/projects/Jot/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     }
   ],

@@ -1,0 +1,47 @@
+@model allFoldersModel
+<div class="container">
+
+<div class="row">
+    <div class="folderList smallScreen col">
+        @foreach (var f in Model.allFolders)
+        {
+            @if(f.FolderId == HttpContextAccessor.HttpContext.Session.GetInt32("folderId"))
+            {
+
+                <a asp-action="ViewFolder" asp-controller="Home" asp-route-folderID="@f.FolderId" class="d-flex justify-content-between each selected" style="text-decoration:none">
+                    <div>
+                        @f.FolderName
+                    </div>
+                    <div style="font-size: 15px ">
+                        @f.Notes.Count 
+                    </div>
+                    
+                </a>
+            }
+            else{
+
+                <a asp-action="ViewFolder" asp-controller="Home" asp-route-folderID="@f.FolderId" class="d-flex justify-content-between each" style="text-decoration:none">
+                    <div>
+                        @f.FolderName
+                    </div>
+                    <div style="font-size: 15px ">
+                        @f.Notes.Count 
+                    </div>
+                </a>
+            }
+        }
+    </div>
+
+    <div class="noteList smallScreen col">
+        <div class="row notes">
+
+                <span class="col sm md lg noteCard" >
+                    <h2>@Model.note.NoteName</h2>
+                    <p>@Model.note.Details</p>
+                </span>
+        </div>
+
+    </div>
+</div>
+
+</div>

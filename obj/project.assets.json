@@ -12155,11 +12155,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/user/coding dojo/job/Jot/Jot.csproj",
+      "projectUniqueName": "/Users/user/coding dojo/job/projects/Jot/Jot.csproj",
       "projectName": "Jot",
-      "projectPath": "/Users/user/coding dojo/job/Jot/Jot.csproj",
+      "projectPath": "/Users/user/coding dojo/job/projects/Jot/Jot.csproj",
       "packagesPath": "/Users/user/.nuget/packages/",
-      "outputPath": "/Users/user/coding dojo/job/Jot/obj/",
+      "outputPath": "/Users/user/coding dojo/job/projects/Jot/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

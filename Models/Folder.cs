@@ -10,7 +10,7 @@ namespace Jot.Models
         public int FolderId {get;set;}
 
         [Required (ErrorMessage = "Folder name is required.")]
-        [MinLength (5, ErrorMessage = "Folder name must be at least 5 characters.")]
+        [MinLength (2, ErrorMessage = "Folder name must be at least 2 characters.")]
         [Display (Name = "Folder:")]
 
         public string FolderName {get;set;}
