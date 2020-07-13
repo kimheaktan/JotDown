@@ -1,2 +1,2 @@
-• Buit with: C# | ASP .Net Core | Responsive Design | Bootstrap | HTML |  CSS | LINQ
-• JotDown is a responsive Web app for note taking where users can organize notes in folders.
+• Built with: C# | ASP .Net Core MVC | Entity Framework Core | MySQL Database | LINQ | Bootstrap | HTML | LINQ | CSS 
+• JotDown is a responsive Web App where users can create, delete notes and folders, and keep notes organized for easy accessibility.
