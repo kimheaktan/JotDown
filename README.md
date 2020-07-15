@@ -1,4 +1,4 @@
-#JotDown
+# JotDown
 
 • Built with: C# | ASP .Net Core MVC | Entity Framework Core | MySQL Database | LINQ | Bootstrap | HTML | LINQ | CSS 
 
